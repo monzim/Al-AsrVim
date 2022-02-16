@@ -60,7 +60,7 @@ return packer.startup(function(use)
   ---Colors Schemes
   use "morhetz/gruvbox" --Popular One
   use "tomasiser/vim-code-dark" -- Dark+ scheme of Visual Studio Code.
-  use "folke/tokyonight.nvim" -- Ine of best supported colorscheme 
+  use "folke/tokyonight.nvim" -- Ine of best supported colorscheme.
   use "dracula/vim"
   use "tomasr/molokai"
   use "LunarVim/darkplus.nvim"
@@ -94,14 +94,16 @@ return packer.startup(function(use)
   --- Flutter Development
   use "akinsho/flutter-tools.nvim" -- LSP for flutter
   use "glepnir/lspsaga.nvim" -- Required for flutter
-  
-  -- Treesitter
-  -- Syntax highlighting
+
+  -- Treesitter     for -- Syntax highlighting
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow" -- Color braket for treesitter
+
+    -- Git
+  use "lewis6991/gitsigns.nvim"
 
 
 
