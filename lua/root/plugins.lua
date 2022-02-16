@@ -46,6 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "kyazdani42/nvim-tree.lua"
+  use "kyazdani42/nvim-web-devicons"
 
   --- Utilities
   -- use "wakatime/vim-wakatime" -- Track your time need api key from wakatime.com
