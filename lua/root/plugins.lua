@@ -45,6 +45,8 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+
   --- Utilities
   -- use "wakatime/vim-wakatime" -- Track your time need api key from wakatime.com
 
@@ -92,6 +94,15 @@ return packer.startup(function(use)
   --- Flutter Development
   use "akinsho/flutter-tools.nvim" -- LSP for flutter
   use "glepnir/lspsaga.nvim" -- Required for flutter
+  
+  -- Treesitter
+  -- Syntax highlighting
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow" -- Color braket for treesitter
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim

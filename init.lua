@@ -5,4 +5,5 @@ require "root.colorscheme"
 require "root.cmp"
 require "root.lsp"
 require "root.telescope"
--- vim.cmd[[colorscheme tokyonight]]
+require "root.treesitter"
+require "root.autopairs"
