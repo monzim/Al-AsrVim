@@ -8,13 +8,13 @@ SPACE is the defult Leader key
 Press jk to go instert mode faster insted of ESC
 
 For swishing vertical split and horizontal Split windows
-Ctrl + j: move down horizontal window 
-Ctrl + k: move up horizontal window 
-Ctrl + l: move right vertical window 
-Ctrl + h: move left vertical window 
+Ctrl + j: move down horizontal window
+Ctrl + k: move up horizontal window
+Ctrl + l: move right vertical window
+Ctrl + h: move left vertical window
 
 For swishing Buffer
-Ctrl + l : switch to next buffer 
+Ctrl + l : switch to next buffer
 Ctrl + h : switch to previous buffer
 
 For indentation
@@ -29,14 +29,13 @@ in visual block mode
 J : move down
 K : move up
 
-In completion mode 
+In completion mode
 Ctrl + space : will close the pop up menu
 Ctrl + e : will close the pop up menu
 Ctrl + c : will close the pop up menu and go to the command mode
 Ctrl + j : move up in pop up menu
 Ctrl + k : move down in pop up menu
 Tab : will select item in the pop up menu
-
 
 gd : go to definition
 gr : go to reference
@@ -46,4 +45,4 @@ in normal mode
 Leader + f : find file
 Leader + t : grep search
 
-## All those config copyed from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configur as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
