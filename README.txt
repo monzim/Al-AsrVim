@@ -45,3 +45,5 @@ Telescope
 in normal mode
 Leader + f : find file
 Leader + t : grep search
+
+## All those config copyed from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configur as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
