@@ -9,3 +9,5 @@ require "root.treesitter"
 require "root.autopairs"
 require "root.gitsigns"
 require "root.nvim-tree"
+require "root.colorizer"
+--   ColorScheme *

@@ -46,8 +46,8 @@ keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+keymap("v", ",", "<gv", opts)
+keymap("v", ".", ">gv", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -71,6 +71,12 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- My keymaps
+-- nnoremap <leader>w :up<CR>  --Write only if something is chnanged
+keymap("n", "<leader>w", ":up<CR>", opts)
+keymap("n", ";", ":", opts)
+keymap("v", ";", ":", opts)
+
 
 
 ---Telescope

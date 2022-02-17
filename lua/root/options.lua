@@ -37,6 +37,7 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   colorcolumn = "120",                     -- Set a Line For Reference Code Break
   syntax = "on",
+
 }
 
 vim.opt.shortmess:append "c"

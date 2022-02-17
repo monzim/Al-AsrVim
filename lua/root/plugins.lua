@@ -75,6 +75,9 @@ return packer.startup(function(use)
   use "kaicataldo/material.vim"
   use "srcery-colors/srcery-vim"
 
+  --Color Highlight show hex color
+  use "norcalli/nvim-colorizer.lua"
+
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -92,6 +95,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   --- Flutter Development
   use "akinsho/flutter-tools.nvim" -- LSP for flutter
