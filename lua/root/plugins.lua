@@ -45,6 +45,11 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  use "nvim-lualine/lualine.nvim" -- A lua line plugin for Neovim
+  -- use "beauwilliams/statusline.lua" -- A statusline plugin for Neovim
+  use "windwp/windline.nvim" -- A statusline plugin for Neovim
+
+  
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
@@ -91,6 +96,8 @@ return packer.startup(function(use)
     -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  -- use "SirVer/ultisnips" -- For Sinppets
+  -- use "natebosch/dartlang-snippets" -- Dart snippets
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP

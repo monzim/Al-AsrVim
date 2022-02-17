@@ -10,4 +10,8 @@ require "root.autopairs"
 require "root.gitsigns"
 require "root.nvim-tree"
 require "root.colorizer"
+require "root.windline"
+-- require "root.lualine"
+
+
 --   ColorScheme *

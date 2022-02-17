@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["material.vim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/material.vim",
@@ -268,6 +273,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
     url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
+  ["windline.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/windline.nvim",
+    url = "https://github.com/windwp/windline.nvim"
   }
 }
 

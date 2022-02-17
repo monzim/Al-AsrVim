@@ -6,4 +6,5 @@ end
 require("root.lsp.lsp-installer")
 require("root.lsp.handlers").setup()
 require ("root.lsp.null-ls")
-require("flutter-tools").setup{}
+-- require("flutter-tools").setup{}
+require("root.lsp.flutter")

@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-telescope.load_extension('media_files','fzf')
+telescope.load_extension('media_files','fzf','flutter')
 local actions = require "telescope.actions"
 
 telescope.setup {
