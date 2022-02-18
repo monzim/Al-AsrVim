@@ -52,3 +52,6 @@ Leader + t : grep search
 Flutter-Tools-command
 To show all Flutter Tools commands in Telescope: Flttool
 Show all FVM Flutter sdk run command: FltFvm
+
+Toggle Terminal
+Ctrl + \: for toggle terminal

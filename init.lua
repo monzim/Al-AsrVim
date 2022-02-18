@@ -14,3 +14,4 @@ require("root.colorizer")
 require("root.windline")
 -- require "root.lualine"
 require("root.dashbord")
+require("root.toggleterm")
