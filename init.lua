@@ -12,6 +12,4 @@ require "root.nvim-tree"
 require "root.colorizer"
 require "root.windline"
 -- require "root.lualine"
-
-
---   ColorScheme *
+require "root.dashbord"

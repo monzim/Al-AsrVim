@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
     url = "https://github.com/LunarVim/darkplus.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["flutter-tools.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",

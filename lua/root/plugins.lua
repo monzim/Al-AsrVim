@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim" -- A lua line plugin for Neovim
   -- use "beauwilliams/statusline.lua" -- A statusline plugin for Neovim
   use "windwp/windline.nvim" -- A statusline plugin for Neovim
+  use "glepnir/dashboard-nvim"
 
   
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
