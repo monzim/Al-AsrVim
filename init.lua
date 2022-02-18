@@ -11,6 +11,7 @@ require("root.autopairs")
 require("root.gitsigns")
 require("root.nvim-tree")
 require("root.colorizer")
+require("root.comment")
 require("root.windline")
 -- require "root.lualine"
 require("root.dashbord")

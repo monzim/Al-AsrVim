@@ -53,6 +53,7 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim") -- A terminal toggle plugin for Neovim
 
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
+	use("terrortylor/nvim-comment") -- Adding comment
 	use("kyazdani42/nvim-tree.lua")
 	use("kyazdani42/nvim-web-devicons")
 

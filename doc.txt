@@ -54,4 +54,10 @@ To show all Flutter Tools commands in Telescope: Flttool
 Show all FVM Flutter sdk run command: FltFvm
 
 Toggle Terminal
+in normal mode
 Ctrl + \: for toggle terminal
+
+Comment
+in visual mode
+Leader + cl : comment single line
+Leader + c : comment Multi line
