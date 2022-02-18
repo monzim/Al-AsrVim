@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	use("kyazdani42/nvim-web-devicons")
 
 	--- Utilities
+	use("github/copilot.vim") -- Copilot
 	-- use "wakatime/vim-wakatime" -- Track your time need api key from wakatime.com
 
 	-- Telescope
