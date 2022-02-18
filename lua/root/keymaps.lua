@@ -88,4 +88,4 @@ keymap("v", ";", ":", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-
+keymap("n", "<c-L>", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)

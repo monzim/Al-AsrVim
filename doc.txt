@@ -47,3 +47,8 @@ Leader + f : find file
 Leader + t : grep search
 
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+
+
+Flutter-Tools-command
+Ctrl + L : To show all flutter commands in Telescope
+Show all FVM Flutter sdk run this:lua require('telescope').extensions.flutter.fvm()
