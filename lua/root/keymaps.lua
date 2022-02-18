@@ -25,7 +25,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -77,8 +76,6 @@ keymap("n", "<leader>w", ":up<CR>", opts)
 keymap("n", ";", ":", opts)
 keymap("v", ";", ":", opts)
 
-
-
 ---Telescope
 -- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',resolve_width=0.3,layout_config={width=0.8,height=0.8,}})
 
@@ -86,6 +83,11 @@ keymap("v", ";", ":", opts)
 
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})<cr>", opts)
+keymap(
+	"n",
+	"<leader>f",
+	"<cmd>lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})<cr>",
+	opts
+)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<c-L>", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)
+--keymap("n", "<leader>lll>", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)

@@ -50,5 +50,5 @@ Leader + t : grep search
 
 
 Flutter-Tools-command
-Ctrl + L : To show all flutter commands in Telescope
-Show all FVM Flutter sdk run this:lua require('telescope').extensions.flutter.fvm()
+To show all Flutter Tools commands in Telescope: Flttool
+Show all FVM Flutter sdk run command: FltFvm

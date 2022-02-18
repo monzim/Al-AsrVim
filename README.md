@@ -45,4 +45,8 @@ in normal mode
 Leader + f : find file
 Leader + t : grep search
 
+Flutter-Tools-command
+To show all Flutter Tools commands in Telescope: Flttool
+Show all FVM Flutter sdk run command: FltFvm
+
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
