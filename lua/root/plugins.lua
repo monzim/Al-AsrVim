@@ -59,7 +59,7 @@ return packer.startup(function(use)
 
 	--- Utilities
 	use("github/copilot.vim") -- Copilot
-	-- use "wakatime/vim-wakatime" -- Track your time need api key from wakatime.com
+	use("wakatime/vim-wakatime") -- TODO: install wakatime in your system for arch sudo pacman -S wakatime Track your time need api key from wakatime.com
 
 	-- Telescope
 	--- Please install ripgrep {https://github.com/BurntSushi/ripgrep#installation} for live grep support
