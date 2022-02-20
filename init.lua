@@ -13,6 +13,6 @@ require("root.nvim-tree")
 require("root.colorizer")
 require("root.comment")
 require("root.windline")
--- require "root.lualine"
 require("root.dashbord")
 require("root.toggleterm")
+require("root.markdown-preview")

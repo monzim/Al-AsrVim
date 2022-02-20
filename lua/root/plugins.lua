@@ -86,6 +86,9 @@ return packer.startup(function(use)
 
 	--Color Highlight show hex color
 	use("norcalli/nvim-colorizer.lua")
+	--Markdown Preview for Neovim
+	use("ellisonleao/glow.nvim")
+	use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'}
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
