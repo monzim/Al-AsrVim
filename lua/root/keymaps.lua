@@ -72,7 +72,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- My keymaps
 -- nnoremap <leader>w :up<CR>  --Write only if something is chnanged
+-- keymap("n", "<leader>w", ":up<CR>", opts)
 keymap("n", "<leader>w", ":up<CR>", opts)
+keymap("n", "<leader>g", ":lua vim.lsp.buf.formatting()<CR>", opts)
+
 keymap("n", ";", ":", opts)
 keymap("v", ";", ":", opts)
 

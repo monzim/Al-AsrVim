@@ -58,4 +58,7 @@ in visual mode
 Leader + cl : comment single line
 Leader + c : comment Multi line
 
+Formating
+Leader + g : Formating Code
+
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)

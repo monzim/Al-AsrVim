@@ -10,8 +10,8 @@ local all_source = {
 	formatting.shfmt,
 	formatting.clang_format,
 	formatting.cmake_format, --Format your listfiles nicely so that they don't look like crap.
-	formatting.dart_format,
-	formatting.codespell, --for code spelling TODO: INSTALL: pip install codespell
+	-- formatting.dart_format,
+	-- formatting.codespell, --for code spelling TODO: INSTALL: pip install codespell
 }
 
 null_ls.setup({
@@ -19,7 +19,7 @@ null_ls.setup({
 
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
-			vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+			vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting()")
 		end
 	end,
 })

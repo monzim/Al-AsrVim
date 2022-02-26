@@ -96,6 +96,6 @@ vim.g.mkdp_open_to_the_world = 1
 
 --recognized filetypes
 --these filetypes will have MarkdownPreview... commands
-vim.g.mkdp_filetypes = {'markdown'}
+vim.g.mkdp_filetypes = { "markdown" }
 
 -- Markdown Preview Plugin End
