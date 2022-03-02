@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["material.vim"] = {
     loaded = true,
@@ -204,6 +214,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
+    url = "https://github.com/yamatsum/nvim-cursorline"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -238,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/onedark.vim",
     url = "https://github.com/joshdick/onedark.vim"
+  },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -303,6 +323,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
     url = "https://github.com/bluz71/vim-moonfly-colors"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
   },
   ["vim-wakatime"] = {
     loaded = true,

@@ -3,7 +3,8 @@ local formatting = null_ls.builtins.formatting
 
 local all_source = {
 	formatting.eslint,
-	formatting.prettier,
+	-- formatting.prettier,
+	formatting.prettierd,
 	formatting.stylua,
 	formatting.black, --Uncompromising Python code formatter. TODO: install pip install git+https://github.com/psf/black
 	formatting.gofmt,

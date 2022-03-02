@@ -61,6 +61,8 @@ return packer.startup(function(use)
 	use("github/copilot.vim") -- Copilot
 	use("wakatime/vim-wakatime") -- TODO: install wakatime in your system for arch sudo pacman -S wakatime Track your time need api key from wakatime.com
 	use("ActivityWatch/aw-watcher-vim") --TODO: must install ActivityWatch in your system. Fot more information visit:https://github.com/ActivityWatch/activitywatch
+	-- use("RRethy/vim-illuminate") --Vim plugin for automatically highlighting other uses of the current word under the cursor
+	use("yamatsum/nvim-cursorline")
 
 	-- Telescope
 	--- Please install ripgrep {https://github.com/BurntSushi/ripgrep#installation} for live grep support
@@ -83,12 +85,15 @@ return packer.startup(function(use)
 	use("bluz71/vim-moonfly-colors")
 	use("kaicataldo/material.vim")
 	use("srcery-colors/srcery-vim")
+	use("olimorris/onedarkpro.nvim")
+	use("projekt0n/github-nvim-theme")
 
 	--Color Highlight show hex color
 	use("norcalli/nvim-colorizer.lua")
 	--Markdown Preview for Neovim
 	use("ellisonleao/glow.nvim")
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
+	use("sheerun/vim-polyglot") --Code highlighting for lots of language
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
