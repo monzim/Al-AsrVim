@@ -26,10 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -78,6 +78,23 @@ keymap("n", "<leader>g", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
 keymap("n", ";", ":", opts)
 keymap("v", ";", ":", opts)
+
+--Own-Key
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzv", opts)
+
+-- keymap("i", ",", "<C-g>u", opts)
+-- keymap("i", ".", "<C-g>u", opts)
+-- keymap("i", "!", "<C-g>u", opts)
+-- keymap("i", "?", "<C-g>u", opts)
+
+--Create NEw TAb
+keymap("n", "<leader>n", ":tabnew<cr>", opts)
+keymap("n", "<leader>c", ":tabclose<cr>", opts)
+
+--For Split window
+keymap("n", "<leader>v", ":vsplit<cr>", opts)
+keymap("n", "<leader>h", ":split<cr>", opts)
 
 ---Telescope
 -- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',resolve_width=0.3,layout_config={width=0.8,height=0.8,}})
