@@ -3,8 +3,12 @@ local formatting = null_ls.builtins.formatting
 
 local all_source = {
 	formatting.eslint,
-	-- formatting.prettier,
-	formatting.prettierd,
+	formatting.prettier.with({
+		-- extra_args = { "--print-width=100" },
+		-- disabled_filetypes = { "html" },
+	}),
+	-- formatting.prettierd,
+	-- formatting.rustywind, --For Tailwind css TODO:npm install -g rustywind
 	formatting.stylua,
 	formatting.black, --Uncompromising Python code formatter. TODO: install pip install git+https://github.com/psf/black
 	formatting.gofmt,
