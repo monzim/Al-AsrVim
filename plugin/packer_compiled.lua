@@ -279,6 +279,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/srcery-vim",
     url = "https://github.com/srcery-colors/srcery-vim"
   },
+  ["statusline.lua"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/statusline.lua",
+    url = "https://github.com/beauwilliams/statusline.lua"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",

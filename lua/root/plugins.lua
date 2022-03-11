@@ -46,7 +46,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 
 	use("nvim-lualine/lualine.nvim") -- A lua line plugin for Neovim
-	-- use "beauwilliams/statusline.lua" -- A statusline plugin for Neovim
+	use("beauwilliams/statusline.lua") -- A statusline plugin for Neovim
 	use("windwp/windline.nvim") -- A statusline plugin for Neovim
 	use("glepnir/dashboard-nvim")
 

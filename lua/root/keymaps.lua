@@ -110,4 +110,4 @@ keymap(
 	opts
 )
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
---keymap("n", "<leader>lll>", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)
+keymap("n", "<leader>l", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)
