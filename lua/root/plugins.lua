@@ -70,7 +70,19 @@ return packer.startup(function(use)
 	use("github/copilot.vim") -- Copilot
 	use("wakatime/vim-wakatime") -- TODO: install wakatime in your system for arch sudo pacman -S wakatime Track your time need api key from wakatime.com
 	use("ActivityWatch/aw-watcher-vim") --TODO: must install ActivityWatch in your system. Fot more information visit:https://github.com/ActivityWatch/activitywatch
-	use("yamatsum/nvim-cursorline")
+
+	use("yamatsum/nvim-cursorline") --Highlight Text Under cursor
+	use("karb94/neoscroll.nvim") --Better Sroll
+	use({
+		"sudormrfbin/cheatsheet.nvim",
+
+		requires = {
+			{ "nvim-telescope/telescope.nvim" },
+			{ "nvim-lua/popup.nvim" },
+			{ "nvim-lua/plenary.nvim" },
+		},
+	})
+	use("petertriho/nvim-scrollbar") --nvim-scrollbar
 
 	-- Telescope
 	--- Please install ripgrep {https://github.com/BurntSushi/ripgrep#installation} for live grep support
@@ -111,7 +123,6 @@ return packer.startup(function(use)
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
-
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
@@ -131,7 +142,7 @@ return packer.startup(function(use)
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 
-		-- Automatically set up your configuration after cloning packer.nvim
+	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

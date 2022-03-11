@@ -8,6 +8,7 @@ require("root.ui.onedarkpro")
 require("root.ui.feline")
 require("root.ui.cokeline")
 require("root.ui.indentline")
+require("root.ui.scrollbar")
 
 require("root.cmp")
 require("root.lsp")
@@ -21,3 +22,5 @@ require("root.colorizer")
 require("root.comment")
 require("root.markdown-preview")
 require("root.toggleterm")
+
+require("neoscroll").setup()

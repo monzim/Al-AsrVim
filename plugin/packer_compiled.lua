@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/ayu-vim",
     url = "https://github.com/ayu-theme/ayu-vim"
   },
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -119,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/LunarVim/darkplus.nvim"
-  },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
@@ -143,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -184,11 +179,6 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
   ["markdown-preview.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
@@ -199,10 +189,10 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/material.vim",
     url = "https://github.com/kaicataldo/material.vim"
   },
-  molokai = {
+  ["neoscroll.nvim"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/molokai",
-    url = "https://github.com/tomasr/molokai"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -220,7 +210,6 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-cokeline"] = {
-    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcokeline\frequire\0" },
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-cokeline",
     url = "https://github.com/noib3/nvim-cokeline"
@@ -254,6 +243,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-scrollbar"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
+    url = "https://github.com/petertriho/nvim-scrollbar"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -300,11 +294,6 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["srcery-vim"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/srcery-vim",
-    url = "https://github.com/srcery-colors/srcery-vim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -345,11 +334,6 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
   },
-  ["vim-moonfly-colors"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
-  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-polyglot",
@@ -359,19 +343,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-wakatime",
     url = "https://github.com/wakatime/vim-wakatime"
-  },
-  ["windline.nvim"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/windline.nvim",
-    url = "https://github.com/windwp/windline.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-cokeline
-time([[Config for nvim-cokeline]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcokeline\frequire\0", "config", "nvim-cokeline")
-time([[Config for nvim-cokeline]], false)
 if should_profile then save_profiles() end
 
 end)

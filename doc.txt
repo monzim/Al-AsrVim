@@ -1,4 +1,5 @@
 # KeyMaps
+For find command run this commans :Cheatsheet
 
 Here you can find some important keymaps that I use in _Al-‘Asr_ vim.
 You can modify or add your custom keymaps also int the _/lua/root/keymaps.lua_ directory. Or you can create a new file in lua/_your_name_/keymaps.lua and add this file in the _lua.init_ .
