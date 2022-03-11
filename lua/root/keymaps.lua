@@ -79,6 +79,9 @@ keymap("n", "<leader>g", ":lua vim.lsp.buf.formatting()<CR>", opts)
 keymap("n", ";", ":", opts)
 keymap("v", ";", ":", opts)
 
+--IndentLine
+keymap("n", "<leader>i", ":IndentLinesToggle<CR>", opts)
+
 --Own-Key
 keymap("n", "n", "nzzzv", opts)
 keymap("n", "N", "Nzzv", opts)
@@ -88,7 +91,7 @@ keymap("n", "N", "Nzzv", opts)
 -- keymap("i", "!", "<C-g>u", opts)
 -- keymap("i", "?", "<C-g>u", opts)
 
---Create NEw TAb
+--Create New TAb
 keymap("n", "<leader>n", ":tabnew<cr>", opts)
 keymap("n", "<leader>c", ":tabclose<cr>", opts)
 

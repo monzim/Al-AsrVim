@@ -61,3 +61,7 @@ Comment
 in visual mode
 Leader + cl : comment single line
 Leader + c : comment Multi line
+
+IndentLine
+in normal mode
+Leader + i :Toggle Indent Line ":IndentLinesToggle"

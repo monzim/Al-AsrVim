@@ -44,14 +44,23 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+	use("Yggdroot/indentLine") --indentLine
 
-	use("nvim-lualine/lualine.nvim") -- A lua line plugin for Neovim
-	use("beauwilliams/statusline.lua") -- A statusline plugin for Neovim
-	use("windwp/windline.nvim") -- A statusline plugin for Neovim
-	use("glepnir/dashboard-nvim")
+	use("glepnir/dashboard-nvim") --Dashbord Nvim
+	use("feline-nvim/feline.nvim")
+	use({
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter",
+	})
+
+	--Tabline
+	use("nvim-lua/lsp-status.nvim") --More information in statusline
+	use({
+		"noib3/nvim-cokeline",
+		requires = "kyazdani42/nvim-web-devicons", -- If you want devicons
+	}) --Best Tabline
 
 	use("akinsho/toggleterm.nvim") -- A terminal toggle plugin for Neovim
-
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("terrortylor/nvim-comment") -- Adding comment
 	use("kyazdani42/nvim-tree.lua")
@@ -61,7 +70,6 @@ return packer.startup(function(use)
 	use("github/copilot.vim") -- Copilot
 	use("wakatime/vim-wakatime") -- TODO: install wakatime in your system for arch sudo pacman -S wakatime Track your time need api key from wakatime.com
 	use("ActivityWatch/aw-watcher-vim") --TODO: must install ActivityWatch in your system. Fot more information visit:https://github.com/ActivityWatch/activitywatch
-	-- use("RRethy/vim-illuminate") --Vim plugin for automatically highlighting other uses of the current word under the cursor
 	use("yamatsum/nvim-cursorline")
 
 	-- Telescope
@@ -75,21 +83,16 @@ return packer.startup(function(use)
 	use("tomasiser/vim-code-dark") -- Dark+ scheme of Visual Studio Code.
 	use("folke/tokyonight.nvim") -- Ine of best supported colorscheme.
 	use("dracula/vim")
-	use("tomasr/molokai")
-	use("LunarVim/darkplus.nvim")
-	--use "Mofiqul/dracula.nvim" --comunity version
 	use("joshdick/onedark.vim")
 	use("sainnhe/gruvbox-material")
 	use("Mangeshrex/uwu.vim")
 	use("ayu-theme/ayu-vim")
-	use("bluz71/vim-moonfly-colors")
 	use("kaicataldo/material.vim")
-	use("srcery-colors/srcery-vim")
 	use("olimorris/onedarkpro.nvim")
-	use("projekt0n/github-nvim-theme")
 
 	--Color Highlight show hex color
 	use("norcalli/nvim-colorizer.lua")
+
 	--Markdown Preview for Neovim
 	use("ellisonleao/glow.nvim")
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" })
@@ -107,8 +110,7 @@ return packer.startup(function(use)
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
-	-- use "SirVer/ultisnips" -- For Sinppets
-	-- use "natebosch/dartlang-snippets" -- Dart snippets
+
 
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
@@ -129,7 +131,7 @@ return packer.startup(function(use)
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 
-	-- Automatically set up your configuration after cloning packer.nvim
+		-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
