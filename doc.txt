@@ -42,10 +42,20 @@ Tab : will select item in the pop up menu
 gd : go to definition
 gr : go to reference
 
+FZF
+in normal
+Ctrl + p :Find Files
+Leader + sh :History Files
+
+in visual
+Ctrl + m :Open Marks
+
 Telescope
 in normal mode
 Leader + f : find file
 Leader + t : grep search
+Leader + sj : find Buffers
+Leader + vh : Help Tags
 
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 

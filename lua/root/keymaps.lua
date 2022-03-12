@@ -99,13 +99,16 @@ keymap("n", "<leader>c", ":tabclose<cr>", opts)
 keymap("n", "<leader>v", ":vsplit<cr>", opts)
 keymap("n", "<leader>h", ":split<cr>", opts)
 
+--FZF
+keymap("n", "<C-p>", ":Files<cr>", opts)
+keymap("n", "<leader>sh", ":History<cr>", opts)
+keymap("v", "<C-m>", ":Marks<cr>", opts)
+
 ---Telescope
--- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',resolve_width=0.3,layout_config={width=0.8,height=0.8,}})
-
--- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})
-
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>", opts)
+keymap("n", "<leader>sj", ":lua require('telescope.builtin').buffers()<cr>", opts)
+keymap("n", "<leader>vh", ":lua require('telescope.builtin').help_tags()<cr>", opts)
 keymap(
 	"n",
 	"<leader>f",
