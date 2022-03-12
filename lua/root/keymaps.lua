@@ -25,12 +25,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -73,19 +72,48 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 -- My keymaps
 -- nnoremap <leader>w :up<CR>  --Write only if something is chnanged
+-- keymap("n", "<leader>w", ":up<CR>", opts)
 keymap("n", "<leader>w", ":up<CR>", opts)
+keymap("n", "<leader>g", ":lua vim.lsp.buf.formatting()<CR>", opts)
+
 keymap("n", ";", ":", opts)
 keymap("v", ";", ":", opts)
 
+--IndentLine
+keymap("n", "<leader>i", ":IndentLinesToggle<CR>", opts)
 
+--Own-Key
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzv", opts)
+
+-- keymap("i", ",", "<C-g>u", opts)
+-- keymap("i", ".", "<C-g>u", opts)
+-- keymap("i", "!", "<C-g>u", opts)
+-- keymap("i", "?", "<C-g>u", opts)
+
+--Create New TAb
+keymap("n", "<leader>n", ":tabnew<cr>", opts)
+keymap("n", "<leader>c", ":tabclose<cr>", opts)
+
+--For Split window
+keymap("n", "<leader>v", ":vsplit<cr>", opts)
+keymap("n", "<leader>h", ":split<cr>", opts)
+
+--FZF
+keymap("n", "<C-p>", ":Files<cr>", opts)
+keymap("n", "<leader>sh", ":History<cr>", opts)
+keymap("v", "<C-m>", ":Marks<cr>", opts)
 
 ---Telescope
--- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',resolve_width=0.3,layout_config={width=0.8,height=0.8,}})
-
--- lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})
-
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({}))<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})<cr>", opts)
+keymap("n", "<leader>sj", ":lua require('telescope.builtin').buffers()<cr>", opts)
+keymap("n", "<leader>vh", ":lua require('telescope.builtin').help_tags()<cr>", opts)
+keymap(
+	"n",
+	"<leader>f",
+	"<cmd>lua require'telescope.builtin'.find_files({layout_strategy='horizontal',winblend = 10,show_line = false,results_title = false,preview_title = false,layout_config = {preview_width = 0.5,},})<cr>",
+	opts
+)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<c-L>", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)
+keymap("n", "<leader>l", "<cmd>lua require('telescope').extensions.flutter.commands()<cr>", opts)

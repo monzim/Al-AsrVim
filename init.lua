@@ -1,15 +1,26 @@
-require "root.options"
-require "root.keymaps"
-require "root.plugins"
-require "root.colorscheme"
-require "root.cmp"
-require "root.lsp"
-require "root.telescope"
-require "root.treesitter"
-require "root.autopairs"
-require "root.gitsigns"
-require "root.nvim-tree"
-require "root.colorizer"
-require "root.windline"
--- require "root.lualine"
-require "root.dashbord"
+require("root.options")
+require("root.keymaps")
+require("root.plugins")
+
+require("root.ui.dashbord")
+require("root.ui.colorscheme")
+require("root.ui.onedarkpro")
+require("root.ui.feline")
+require("root.ui.cokeline")
+require("root.ui.indentline")
+require("root.ui.scrollbar")
+
+require("root.cmp")
+require("root.lsp")
+require("root.null-ls")
+require("root.telescope")
+require("root.treesitter")
+require("root.autopairs")
+require("root.gitsigns")
+require("root.nvim-tree")
+require("root.colorizer")
+require("root.comment")
+require("root.markdown-preview")
+require("root.toggleterm")
+
+require("neoscroll").setup()

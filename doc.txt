@@ -1,4 +1,5 @@
 # KeyMaps
+For find command run this commans :Cheatsheet
 
 Here you can find some important keymaps that I use in _Al-‘Asr_ vim.
 You can modify or add your custom keymaps also int the _/lua/root/keymaps.lua_ directory. Or you can create a new file in lua/_your_name_/keymaps.lua and add this file in the _lua.init_ .
@@ -41,14 +42,37 @@ Tab : will select item in the pop up menu
 gd : go to definition
 gr : go to reference
 
+FZF
+in normal
+Ctrl + p :Find Files
+Leader + sh :History Files
+
+in visual
+Ctrl + m :Open Marks
+
 Telescope
 in normal mode
 Leader + f : find file
 Leader + t : grep search
+Leader + sj : find Buffers
+Leader + vh : Help Tags
 
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
 
 Flutter-Tools-command
-Ctrl + L : To show all flutter commands in Telescope
-Show all FVM Flutter sdk run this:lua require('telescope').extensions.flutter.fvm()
+To show all Flutter Tools commands in Telescope: Flttool
+Show all FVM Flutter sdk run command: FltFvm
+
+Toggle Terminal
+in normal mode
+Ctrl + \: for toggle terminal
+
+Comment
+in visual mode
+Leader + cl : comment single line
+Leader + c : comment Multi line
+
+IndentLine
+in normal mode
+Leader + i :Toggle Indent Line ":IndentLinesToggle"

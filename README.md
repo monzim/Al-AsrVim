@@ -34,7 +34,7 @@ Ctrl + space : will close the pop up menu
 Ctrl + e : will close the pop up menu
 Ctrl + c : will close the pop up menu and go to the command mode
 Ctrl + j : move up in pop up menu
-Ctrl + k : move down in pop up menu
+Ctrl + +k : move down in pop up menu
 Tab : will select item in the pop up menu
 
 gd : go to definition
@@ -44,5 +44,35 @@ Telescope
 in normal mode
 Leader + f : find file
 Leader + t : grep search
+
+<C-x> go to file selection as a split  
+<C-v> go to file selection as a vsplit  
+<C-t> go to a file in a new tab
+
+Flutter-Tools-command
+To show all Flutter Tools commands in Telescope: Flttool
+Show all FVM Flutter sdk run command: FltFvm
+
+Toggle Terminal
+in normal mode
+Ctrl + \: for toggle terminal
+
+Comment
+in visual mode
+Leader + cl : comment single line
+Leader + c : comment Multi line
+
+Formating
+Leader + g : Formating Code
+
+Tab
+in normal mode
+Leader + n : create new tab
+Leader + c : close tab
+
+Split
+in normal mode
+Leader + v : vertical split
+Leader + h : horizontal split
 
 ## All those config copied from [LunarVim](https://github.com/LunarVim/Neovim-from-scratch) and configured as my need. You watch this tutorial of LunarVim creator: [Neovim from Scratch](https://youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)

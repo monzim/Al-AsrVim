@@ -74,10 +74,20 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aw-watcher-vim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/aw-watcher-vim",
+    url = "https://github.com/ActivityWatch/aw-watcher-vim"
+  },
   ["ayu-vim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/ayu-vim",
     url = "https://github.com/ayu-theme/ayu-vim"
+  },
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -109,15 +119,20 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["darkplus.nvim"] = {
+  ["copilot.vim"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/LunarVim/darkplus.nvim"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   ["dashboard-nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
+  },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/feline-nvim/feline.nvim"
   },
   ["flutter-tools.nvim"] = {
     loaded = true,
@@ -129,10 +144,20 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/glow.nvim",
+    url = "https://github.com/ellisonleao/glow.nvim"
   },
   gruvbox = {
     loaded = true,
@@ -144,25 +169,35 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
+  indentLine = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/indentLine",
+    url = "https://github.com/Yggdroot/indentLine"
+  },
+  ["lsp-status.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lsp-status.nvim",
+    url = "https://github.com/nvim-lua/lsp-status.nvim"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
-  ["lualine.nvim"] = {
+  ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["material.vim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/material.vim",
     url = "https://github.com/kaicataldo/material.vim"
   },
-  molokai = {
+  ["neoscroll.nvim"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/molokai",
-    url = "https://github.com/tomasr/molokai"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -179,10 +214,30 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-cokeline"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-cokeline",
+    url = "https://github.com/noib3/nvim-cokeline"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
+    url = "https://github.com/yamatsum/nvim-cursorline"
+  },
+  ["nvim-gps"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-gps",
+    url = "https://github.com/SmiteshP/nvim-gps"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -193,6 +248,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-scrollbar"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",
+    url = "https://github.com/petertriho/nvim-scrollbar"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -219,6 +279,11 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/onedark.vim",
     url = "https://github.com/joshdick/onedark.vim"
   },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -234,11 +299,6 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["srcery-vim"] = {
-    loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/srcery-vim",
-    url = "https://github.com/srcery-colors/srcery-vim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
@@ -253,6 +313,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
@@ -274,15 +339,15 @@ _G.packer_plugins = {
     path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
   },
-  ["vim-moonfly-colors"] = {
+  ["vim-polyglot"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
   },
-  ["windline.nvim"] = {
+  ["vim-wakatime"] = {
     loaded = true,
-    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/windline.nvim",
-    url = "https://github.com/windwp/windline.nvim"
+    path = "/home/monzim/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   }
 }
 
