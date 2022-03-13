@@ -11,6 +11,13 @@ Can be used as vs-code alternative
 - Customization
 
 ## Installation
+### Single commad install
+
+`bash <(curl -s https://raw.githubusercontent.com/Monzim/Al-AsrVim/main/system/install.sh)`
+
+NOTE: MAY NOT WORK THIS FOR YOUR IF TRY MANUAL INSTALL
+
+## Manual Installation
 
 #### Arch Linux
 
