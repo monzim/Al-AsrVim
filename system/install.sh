@@ -90,6 +90,17 @@ function setup_al_asr_vim() {
   echo "Packer setup complete"
 }
 
+logo(){
+
+echo "    _   _      _               _       ";
+echo "   /_\ | |___ /_\   ____ ___ _(_)_ __  ";
+echo "  / _ \| |___/ _ \ (_-< '_\ V / | '  \ ";
+echo " /_/ \_\_|  /_/ \_\/__/_|__\_/|_|_|_|_|";
+echo "                       |___|           ";
+
+}
+
+logo
 detect_platform_install_neovim_fzf
 mkdir -p ~/.config/nvim
 echo "Backup old config"
