@@ -1,3 +1,4 @@
+require("alAsr.packer")
 require('alAsr.remap')
 require('alAsr.set')
 require('alAsr.keymap')
