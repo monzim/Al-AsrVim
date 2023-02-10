@@ -34,6 +34,7 @@ vim.opt.colorcolumn = "80"
 vim.opt.list = true
 local notify = vim.notify
 
+-- Ignore warning of multiple different client offset_encodings
 vim.notify = function(msg, ...)
     if msg:match("warning: multiple different client offset_encodings") then
         return
