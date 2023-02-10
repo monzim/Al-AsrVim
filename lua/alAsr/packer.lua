@@ -1,4 +1,14 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+local fn = vim.fn
+
+-- Automatically install packer
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+if fn.empty(fn.glob(install_path)) > 0 then
+    PACKER_BOOTSTRAP = fn.system({"git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim",
+                                  install_path})
+    print("Installing packer close and reopen Neovim...")
+    vim.cmd([[packadd packer.nvim]])
+end
+
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd([[
   augroup packer_user_config
@@ -17,15 +27,15 @@ end
 packer.init({
     display = {
         open_fn = function()
-            return require("packer.util").float({ border = "rounded" })
-        end,
-    },
+            return require("packer.util").float({
+                border = "rounded"
+            })
+        end
+    }
 })
 
--- Only required if you have packer configured as `opt`
-vim.cmd([[packadd packer.nvim]])
-
-return require("packer").startup(function(use)
+-- Install your plugins here
+return packer.startup(function(use)
     -- Packer can manage itself
     use("wbthomason/packer.nvim")
     -- Telescope is a fuzzy finder over lists. You can search over
@@ -33,9 +43,12 @@ return require("packer").startup(function(use)
         "nvim-telescope/telescope.nvim",
         tag = "0.1.1",
         -- or                            , branch = '0.1.x',
-        requires = { { "nvim-lua/plenary.nvim" } },
+        requires = {{"nvim-lua/plenary.nvim"}}
     })
-    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+    use({
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "make"
+    })
 
     -- Harpoon
     use("ThePrimeagen/harpoon")
@@ -43,14 +56,11 @@ return require("packer").startup(function(use)
         "karb94/neoscroll.nvim",
         config = function()
             require("neoscroll").setup()
-        end,
+        end
     })
     use({
         "feline-nvim/feline.nvim",
-        requires = {
-            { "SmiteshP/nvim-gps" },
-            { "nvim-treesitter/nvim-treesitter" },
-        },
+        requires = {{"SmiteshP/nvim-gps"}, {"nvim-treesitter/nvim-treesitter"}}
     })
     use({
         "lukas-reineke/indent-blankline.nvim",
@@ -58,9 +68,9 @@ return require("packer").startup(function(use)
             require("indent_blankline").setup({
                 -- for example, context is off by default, use this to turn it on
                 show_current_context = true,
-                show_current_context_start = true,
+                show_current_context_start = true
             })
-        end,
+        end
     })
 
     --- Utilities
@@ -86,41 +96,41 @@ return require("packer").startup(function(use)
     use("RRethy/vim-illuminate")
 
     -- Treesitter
-    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+    use("nvim-treesitter/nvim-treesitter", {
+        run = ":TSUpdate"
+    })
     use("tpope/vim-fugitive")
 
     -- Terminal
-    use({
-        "akinsho/toggleterm.nvim",
-    })
+    use({"akinsho/toggleterm.nvim"})
 
     -- LSP
     use({
         "VonHeikemen/lsp-zero.nvim",
         branch = "v1.x",
-        requires = {
-            -- LSP Support
-            { "neovim/nvim-lspconfig" }, -- Required
-            { "williamboman/mason.nvim" }, -- Optional
-            { "williamboman/mason-lspconfig.nvim" }, -- Optional
-
-            -- Autocompletion
-            { "hrsh7th/nvim-cmp" }, -- Required
-            { "hrsh7th/cmp-nvim-lsp" }, -- Required
-            { "hrsh7th/cmp-buffer" }, -- Optional
-            { "hrsh7th/cmp-path" }, -- Optional
-            { "saadparwaiz1/cmp_luasnip" }, -- Optional
-            { "hrsh7th/cmp-nvim-lua" }, -- Optional
-            -- { "jose-elias-alvarez/null-ls.nvim" }, -- My addition
-
-            -- Snippets
-            { "L3MON4D3/LuaSnip" }, -- Required
-            { "rafamadriz/friendly-snippets" }, -- Optional
-        },
+        requires = { -- LSP Support
+        {"neovim/nvim-lspconfig"}, -- Required
+        {"williamboman/mason.nvim"}, -- Optional
+        {"williamboman/mason-lspconfig.nvim"}, -- Optional
+        -- Autocompletion
+        {"hrsh7th/nvim-cmp"}, -- Required
+        {"hrsh7th/cmp-nvim-lsp"}, -- Required
+        {"hrsh7th/cmp-buffer"}, -- Optional
+        {"hrsh7th/cmp-path"}, -- Optional
+        {"saadparwaiz1/cmp_luasnip"}, -- Optional
+        {"hrsh7th/cmp-nvim-lua"}, -- Optional
+        -- { "jose-elias-alvarez/null-ls.nvim" }, -- My addition
+        -- Snippets
+        {"L3MON4D3/LuaSnip"}, -- Required
+        {"rafamadriz/friendly-snippets"} -- Optional
+        }
     })
 
     -- Dart and flutter
-    use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
+    use({
+        "akinsho/flutter-tools.nvim",
+        requires = "nvim-lua/plenary.nvim"
+    })
 
     use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 
@@ -129,15 +139,14 @@ return require("packer").startup(function(use)
         "numToStr/Comment.nvim",
         config = function()
             require("Comment").setup()
-        end,
+        end
     })
 
     use({
         "nvim-tree/nvim-tree.lua",
-        requires = {
-            "nvim-tree/nvim-web-devicons", -- optional, for file icons
+        requires = {"nvim-tree/nvim-web-devicons" -- optional, for file icons
         },
-        tag = "nightly", -- optional, updated every week. (see issue #1193)
+        tag = "nightly" -- optional, updated every week. (see issue #1193)
     })
     use("kyazdani42/nvim-web-devicons")
     use("lewis6991/gitsigns.nvim") -- Git Line
@@ -154,12 +163,12 @@ return require("packer").startup(function(use)
                     enable = true,
                     -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
                     extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-                    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+                    max_file_lines = nil -- Do not enable for files with more than n lines, int
                     -- colors = {}, -- table of hex strings
                     -- termcolors = {} -- table of colour name strings
-                },
+                }
             })
-        end,
+        end
     })
 
     -- use{
@@ -170,4 +179,8 @@ return require("packer").startup(function(use)
     -- }
 
     --
+
+    if PACKER_BOOTSTRAP then
+        require("packer").sync()
+    end
 end)
